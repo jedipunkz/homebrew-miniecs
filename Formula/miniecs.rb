@@ -5,20 +5,20 @@
 class Miniecs < Formula
   desc "Miniecs: AWS ECS Login, Exec CLI"
   homepage "https://github.com/jedipunkz/miniecs"
-  version "2.1.4"
+  version "2.1.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jedipunkz/miniecs/releases/download/v2.1.4/miniecs_2.1.4_darwin_amd64.tar.gz"
-      sha256 "d20c115532ee425e9ec4d410536d6a83941e46e20ee7d9d09dcaebde027ed474"
+      url "https://github.com/jedipunkz/miniecs/releases/download/v2.1.5/miniecs_2.1.5_darwin_amd64.tar.gz"
+      sha256 "f1027559543ff410774dd2a5c5fb11206aae6c8d7c0277af6fa53b4e0ca52d1b"
 
       define_method(:install) do
         bin.install "miniecs"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jedipunkz/miniecs/releases/download/v2.1.4/miniecs_2.1.4_darwin_arm64.tar.gz"
-      sha256 "bee9f6880b182b4f6d0b9f16eaafecaebcd8944382d3e468c23dc6c1e0283a96"
+      url "https://github.com/jedipunkz/miniecs/releases/download/v2.1.5/miniecs_2.1.5_darwin_arm64.tar.gz"
+      sha256 "911d2e468d47f1e84a1977877757d2a13a2d0530373fa52b4121bff573a0d17d"
 
       define_method(:install) do
         bin.install "miniecs"
@@ -28,22 +28,22 @@ class Miniecs < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jedipunkz/miniecs/releases/download/v2.1.4/miniecs_2.1.4_linux_amd64.tar.gz"
-      sha256 "ca4f624216e54a1bec7bf5c3aea8ae895d34e1e65a9238f738fd4fdcd16de6c2"
+      url "https://github.com/jedipunkz/miniecs/releases/download/v2.1.5/miniecs_2.1.5_linux_amd64.tar.gz"
+      sha256 "e9ad8cef646aea421a5985644b952d25a4d3d5612a833839ad75b0427e9dcdd1"
       define_method(:install) do
         bin.install "miniecs"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/jedipunkz/miniecs/releases/download/v2.1.4/miniecs_2.1.4_linux_armv6.tar.gz"
-      sha256 "811a24d9d09f16409dab4845c7568289ae98b5ebbaac0f14909c731746835daa"
+      url "https://github.com/jedipunkz/miniecs/releases/download/v2.1.5/miniecs_2.1.5_linux_armv6.tar.gz"
+      sha256 "998c5664acbc1eeef3929a02fa6ac2aa0e16748100a4e862e6c02085f99db216"
       define_method(:install) do
         bin.install "miniecs"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jedipunkz/miniecs/releases/download/v2.1.4/miniecs_2.1.4_linux_arm64.tar.gz"
-      sha256 "81275cdc64d1bf295a2fa1052e383fd99ffed3b49c7ad49845829c265386b3b1"
+      url "https://github.com/jedipunkz/miniecs/releases/download/v2.1.5/miniecs_2.1.5_linux_arm64.tar.gz"
+      sha256 "c668241a90a4c161c2419e228cb0ba405b9b3eed02bbab6419f870eef1f9c0a9"
       define_method(:install) do
         bin.install "miniecs"
       end
